@@ -1,0 +1,34 @@
+{
+  "name": "discublog",
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@9.2.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "lint:fix": "turbo lint:fix",
+    "ts:check": "turbo ts:check",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@discublog/typescript-config": "workspace:*",
+    "@zhangyu1818/eslint-config": "^1.0.1",
+    "lint-staged": "^15.2.5",
+    "prettier": "^3.2.5",
+    "simple-git-hooks": "^2.11.1",
+    "turbo": "latest",
+    "typescript": "^5.4.5"
+  },
+  "pnpm": {
+    "overrides": {
+      "eslint-config-next": "15.0.0-rc.0"
+    }
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  }
+}
