@@ -1,0 +1,11 @@
+{
+  "extends": "@discublog/typescript-config/base.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "declarationMap": false,
+    "noEmit": false,
+    "outDir": "dist"
+  },
+  "include": ["src"]
+}

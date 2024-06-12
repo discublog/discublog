@@ -12,10 +12,11 @@
     "lint": "turbo lint",
     "lint:fix": "turbo lint:fix",
     "ts:check": "turbo ts:check",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md}\""
   },
   "devDependencies": {
     "@discublog/typescript-config": "workspace:*",
+    "@types/node": "^20",
     "@zhangyu1818/eslint-config": "^1.0.1",
     "lint-staged": "^15.2.5",
     "prettier": "^3.2.5",

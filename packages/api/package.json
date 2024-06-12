@@ -1,0 +1,43 @@
+{
+  "name": "@discublog/api",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A ready-to-use, reusable wrapper for the GitHub Discussions API, based on the GitHub GraphQL API.",
+  "author": "zhangyu1818 <hey@zhangyu.dev>",
+  "license": "MIT",
+  "keywords": [
+    "GitHub API",
+    "GitHub Discussions",
+    "GitHub Discussions API",
+    "GitHub GraphQL API"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./client": {
+      "types": "./dist/client.d.ts",
+      "import": "./dist/client.js"
+    },
+    "./interface": {
+      "types": "./dist/interface.d.ts"
+    }
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && npx tsc"
+  },
+  "dependencies": {
+    "@octokit/core": "^6.1.2"
+  },
+  "devDependencies": {
+    "@discublog/typescript-config": "workspace:*"
+  }
+}
